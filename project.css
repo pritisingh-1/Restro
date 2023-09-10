@@ -1,0 +1,695 @@
+*{
+margin: 0px;
+padding: 0px;
+
+}
+/*css variable*/
+:root{
+    --navbar-height:100px ;
+
+}
+#navbar{
+    display: flex;
+    position: relative;
+    height: 50px;
+    width: 100%;
+align-items: center;
+position: fixed;
+
+}
+#logo{
+
+
+}
+#logo img{
+height: 60px;
+width: 50px;
+margin: 5px 5px;
+padding: 5px 5px;
+
+}
+#navbar ul {
+    display: flex;
+    padding: 10px 10px;
+    margin: 10px 10px;
+}
+#navbar::before{
+    content: " ";
+   /* background-image: url(https://img.freepik.com/free-photo/chicken-skewers-with-slices-sweet-peppers-dill_2829-18813.jpg?size=626&ext=jpg&uid=R108588415&semt=sph);*/
+   /* background-image: url(https://media.istockphoto.com/id/1457889029/photo/group-of-food-with-high-content-of-dietary-fiber-arranged-side-by-side.jpg?b=1&s=612x612&w=0&k=20&c=BON5S0uDJeCe66N9klUEw5xKSGVnFhcL8stPLczQd_8=);*/
+   /* background-color: rgba(207, 100, 237, 0.965);*/
+    background-image: url(https://thumbs.dreamstime.com/z/food-fruit-22881712.jpg?w=992);
+   position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 70px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    
+    }
+
+#navbar ul li{
+font-size: 2.3rem;
+list-style: none;
+text-align: center;
+}
+#navbar ul li a{
+  margin-top: 20px;
+display: block;
+position: relative;
+left: 450px;
+white-space:break-spaces ;
+margin-top: 10px 10px;
+padding: 20px 15px;
+color: black;
+font-weight: bold;
+}
+#navbar ul li a:hover{  
+    color: #0ef;
+border-radius: 10px 5px;
+transform: skew(360deg);
+
+}
+.vid video{
+width: 100%;
+z-index: -1;
+position: fixed;
+}
+#home{
+display: flex;
+flex-direction: column;
+padding: 10px 200px;
+height: 580px;
+justify-content: center;
+align-items: center;
+
+}
+#home::before{
+    content: " ";
+    position: absolute;
+/*background-image:url(https://media.gettyimages.com/id/1288064106/photo/empty-restaurant-interior.jpg?s=2048x2048&w=gi&k=20&c=X1yJM8ATxovxD1otZH3XlJo_cDLafhYz12MY5BfbGXw=) ;*/
+/*background-image: url(https://res.cloudinary.com/nmg-prod/image/upload/v1609263149/aem/bergdorf-goodman/FINAL/WEB/LP/LP_Restaurants_100120_03.jpg) ;*/
+/*background-image: url(https://thumbs.dreamstime.com/z/fit-young-woman-fighting-off-soda-junk-food-isolated-white-background-79730383.jpg?w=768);  */
+filter: blur(1);
+margin-top:100px;
+height: 100%;
+    width: 100%;
+    z-index: -1;
+    
+    image-rendering: initial;
+
+}
+#home h1{
+color: whitesmoke;
+text-align: center;
+
+}
+.h-primary{
+font-size: 3em;
+padding: 10px 10px;
+margin: 10px 10px;
+
+}
+  #home p {
+font-size: 2rem;
+padding: ;
+/*margin: 5px 5px;*/
+color:  #fff; ;
+
+  }
+  .btn{
+padding: 20px 10px;
+margin: 10px 5px;
+ border: 2px solid blueviolet;
+ border-radius: 10px;
+ background-color: rgba(196, 255, 213, 0.849);
+ color:brown;
+ width: 200px;
+ font-size: 1.8rem;
+ font-weight: bold;
+ cursor: pointer ;
+}
+.btn:hover{
+    color: blue;
+transform: scale(0.6);
+text-shadow:10px 20px 30px 36px yellow;
+box-shadow: 10px 10px rgb(130, 200, 238), 15px 15px rgba(0, 102, 255, 0.431);
+
+}
+.container{
+display: flex;
+height: 600px;
+margin: 10px 10px;
+padding: 10px 20px;
+
+
+}
+.center{
+align-items: center;
+justify-content: center;
+
+
+
+}
+#services{
+display: flex;
+margin: 40px ;
+
+}
+#services .box{
+border: 4px solid blueviolet;
+border-radius: 35px;
+padding: 10px 10px;
+margin: 10px 10px;
+background-color: rgba(0, 170, 255, 0.237);
+box-shadow: 10px 10px rgb(130, 200, 238), 15px 15px rgba(0, 102, 255, 0.431);
+}
+#services .box img{
+    display: block;
+height: 300px;
+width: 300px;    
+border-radius: 20px;
+margin: auto;
+}
+#services .box img:hover{
+    transform: scale(1.1);
+}
+#services .box p{
+    font-size: 1.2rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#services{
+}
+.primary{
+display: block;
+position:absolute;
+right: 600px;
+font-size: 2rem ;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.h-secondary{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: flex;
+text-align: center;
+padding: 10px;
+}
+
+
+.container1{
+/*background-image: url(https://images.unsplash.com/photo-1564675454013-6e68e6a8c0c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80) ;*/
+    display: flex;
+    height: auto;
+    width: 100%;
+  
+    }
+    .card{
+    padding: 30px 45px ;
+    margin: 40px 20px;
+    /*border: 3px solid red;*/
+    /*box-shadow:10px 8px 10px green ;*/
+    box-shadow:10px 8px 10px 15px rgba(4, 48, 62, 0.75);
+    /*box-shadow:-10px -8px green ;*/
+    box-shadow: inset 5px 90px greenyellow;
+    box-shadow: 10px 10px goldenrod, 15px 15px blueviolet;
+    }
+    .card h2{
+        margin: 20px;
+        font-size: 1.8rem;
+        color: blue;
+    text-shadow: 3px 5px 2px rgb(226, 43, 214);
+    
+    }
+    .card,h2, p,li{
+        font-size: 1.4rem;
+        color:#fff;
+        
+
+    }
+    .container2{
+        display: flex;
+        height: 340px;
+margin:0px;
+    background-image: url(https://t3.ftcdn.net/jpg/01/14/51/60/360_F_114516029_Z2B6FO30AB6ZR3v9WHXjpXmJScaiLtzk.jpg);
+    }
+    .container2:hover{
+    background-image: url(https://bfoodale.com/uploads/2021/12/Mutton-Biryani.jpg) ;
+    width: 100%;
+height: 480px;
+margin: 10px;
+box-shadow: 20px 20px 25px 25px  blueviolet;
+
+}
+.container2, h1{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        font-size: 7rem ;
+        font-weight: bolder;
+}
+
+/*.container2:hover{
+    background-image:url(https://vismaifood.com/storage/app/uploads/public/f14/664/f87/thumb__700_0_0_0_auto.jpg);
+    );
+    width: 100%;
+    height: 500px;
+    }*/
+#client{
+display: flex;
+height: 500px;
+
+}
+#client::before{
+    content: "";
+position: absolute;
+background:url(https://thumbs.dreamstime.com/z/healthy-clean-eating-layout-vegetarian-food-diet-nutrition-concept-various-fresh-vegetables-ingredients-salad-white-105567339.jpg?w=992) no-repeat center center/cover;
+height: 500px;
+width: 100%;
+z-index:-1 ;
+opacity: 0.5;
+
+}
+#priti{
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 10px;
+}
+
+.pri video{
+padding: 2px 2px;
+margin-top: 5;
+width: 1400px;
+height: 490px;
+
+}
+
+.contact>div:hover{
+transform:scale(1.1);
+overflow: hidden;
+
+}
+
+.p-primary{
+    display: block;
+align-items: center;
+justify-content: center;
+margin-top: 0px;
+position: relative;
+left: 450px;
+    font-size: 5rem ;
+    font-weight: bolder; 
+}
+.pri{
+display: block;
+
+}
+.contact{
+display:grid;
+/*grid-template-columns: 1fr 3fr 1fr;*/
+grid-template-columns: repeat(5 ,2fr);
+grid-template-rows: repeat(8, 1fr);
+/*grid-column-gap: 2rem;
+grid-row-gap: 1rem;*/
+grid-gap: 0px;
+
+}
+.contact{
+    height:850px
+}
+#dish1{
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  text-shadow: 4px 5px blueviolet ,5px 5px red; 
+  background-image: url(https://media.istockphoto.com/id/666969052/photo/man-eating-delicious-salad-with-shrimp-in-a-restaurant.jpg?s=612x612&w=0&k=20&c=bokKXPgQx-2kdzumMRFZ25glsGOf-_5BRznjxARQ9fU=);
+      border: 2px solid blueviolet;
+      height: 400px;
+  width: 400px;
+  padding: 5px 5px;
+  margin: 5px 5px;
+
+}
+
+#dish2{
+    align-items: center;
+text-align: center;
+justify-content: center;
+text-shadow: 4px 5px blueviolet ,5px 5px red;
+background-image: url(https://images.pexels.com/photos/1265626/pexels-photo-1265626.jpeg?auto=compress&cs=tinysrgb&w=600);
+    border: 2px solid blueviolet;
+    height: 400px;
+width: 400px;
+/*box-shadow: 15px 20px 25px 30px rgb(0, 229, 255);
+opacity: 0.7;*/
+padding: 5px 5px;
+margin: 5px 5px;
+}
+#dish3{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    text-shadow: 4px 5px blueviolet ,5px 5px red; 
+    background-image: url(https://cdn.pixabay.com/photo/2018/04/13/17/14/vegetable-skewer-3317060_640.jpg);
+        border: 2px solid blueviolet;
+        height: 400px;
+    width: 500px;
+   /* box-shadow: 15px 20px 25px 30px rgb(0, 229, 255);
+    opacity: 0.7;*/
+    padding: 5px 5px;
+    margin: 5px 5px;
+}
+#dish6{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    text-shadow: 4px 5px blueviolet ,5px 5px red; 
+    background-image: url(https://cdn.pixabay.com/photo/2012/03/02/00/29/beef-20678_640.jpg);
+        border: 2px solid blueviolet;
+        height: 400px;
+    width: 400px;
+    /*box-shadow: 15px 20px 25px 30px rgb(0, 229, 255);
+    opacity: 0.7;*/
+    padding: 5px 5px;
+    margin: 5px 5px;
+
+
+}
+#dish7{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    text-shadow: 4px 5px blueviolet ,5px 5px red; 
+    background-image: url(https://cdn.pixabay.com/photo/2018/05/17/17/07/fried-3409076_640.jpg);
+        border: 2px solid blueviolet;
+        height: 400px;
+    width: 400px;
+    /*box-shadow: 15px 20px 25px 30px rgb(0, 229, 255);
+    opacity: 0.7;*/
+    padding: 5px 5px;
+    margin: 5px 5px;
+}
+#dish8{
+align-items: center;
+  text-align: center;
+  justify-content: center;
+  text-shadow: 4px 5px blueviolet ,5px 5px red; 
+  background-image: url(https://media.istockphoto.com/id/1365267151/photo/healthy-bowl-quinoa-salad-with-tuna-broccoli-avocado-on-wooden-rustic-table-top-view.jpg?s=612x612&w=0&k=20&c=2pxvKqdHb78o5kdg3wy3Z4yjBF5n4YhTbMvO4cO_ais=);
+      border: 2px solid blueviolet;
+      height: 400px;
+  width: 500px;
+  /*box-shadow: 15px 20px 25px 30px rgb(0, 229, 255);
+  opacity: 0.7;*/
+  padding: 5px 5px;
+  margin: 5px 5px;
+}
+.landing_page * {
+    font-family: Nunito, sans-serif;
+  }
+  
+  .landing_page .responsive-container-block {
+    min-height: 75px;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    justify-content: flex-start;
+  }
+  
+  .landing_page .text-blk {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    line-height: 25px;
+  }
+  
+  .landing_page .responsive-cell-block {
+    min-height: 75px;
+  }
+  
+  .landing_page .responsive-container-block.container {
+    max-width: 1320px;
+    margin-top: 60px;
+    margin-right: auto;
+    margin-bottom: 60px;
+    margin-left: auto;
+    position: relative;
+  }
+  
+  .landing_page .form-box {
+    background-color: rgba(135, 216, 222, 0.676)
+    color: white;
+    padding-top: 35px;
+    padding-right: 33px;
+    padding-bottom: 35px;
+    padding-left: 33px;
+    max-width: 506px;
+  }
+  
+  .landing_page .text-blk.contactus-head {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  
+  .landing_page .text-blk.contactus-subhead {
+    color: #767676;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 18px;
+    margin-left: 0px;
+  }
+  
+  .landing_page .input {
+    width: 100%;
+    height: 50px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-size: 18px;
+    padding-top: 1px;
+    padding-right: 125px;
+    padding-bottom: 1px;
+    padding-left: 22.5px;
+    border-top-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
+    border-left-style: none;
+    border-top-color: #767676;
+    border-right-color: #767676;
+    border-bottom-color: #767676;
+    border-left-color: #767676;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    background-color:#767676;
+    padding: 1px 12.5px 1px 22.5px;
+  }
+  
+  .landing_page .textinput {
+    width: 100%;
+    height: 233px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    font-size: 18px;
+    padding-top: 22px;
+    padding-right: 22px;
+    padding-bottom: 22px;
+    padding-left: 22px;
+    background-color:#767676;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
+    border-left-style: none;
+    border-top-color:#767676; ;
+    border-right-color:#767676; ;
+    border-bottom-color:#767676; ;
+    border-left-color:#767676;;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+  }
+  
+  .landing_page .submit-btn {
+    width: 100%;
+    height: 56px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: #146132;
+    font-size: 18px;
+    font-weight: 600;
+    color: wheat;
+    border-top-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
+    border-left-style: none;
+    border-top-color: #146132;
+    border-right-color: #146132;
+    border-bottom-color: #146132;
+    border-left-color: #146132;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+  }
+  
+  .landing_page .responsive-cell-block.wk-tab-12.wk-mobile-12.wk-desk-6.wk-ipadp-6.emial {
+    padding-top: 0px;
+    padding-right: 10px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+  }
+  
+  .landing_page .responsive-cell-block.wk-ipadp-6.wk-tab-12.wk-mobile-12.wk-desk-6.right-one {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .landing_page .responsive-cell-block.wk-desk-6.wk-ipadp-6.wk-tab-12.wk-mobile-12.left-one {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #767676;;
+  }
+  
+  .landing_page .text-blk.section-subhead {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 50px;
+    margin-left: 0px;
+    max-width: 420px;
+    font-size: 18px;
+    color: #767676;
+  }
+  
+  .landing_page .text-blk.section-head {
+    font-size: 40px;
+    line-height: 55px;
+    font-weight: 800;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 15px;
+    margin-left: 0px;
+    max-width: 450px;
+  }
+  
+  .landing_page .icons-container {
+    max-width: 450px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .landing_page .img {
+    width: 31px;
+    height: 31px;
+  }
+  
+  .landing_page .responsive-container-block.big-container {
+    background-color:;
+    padding-top: 0px;
+    padding-right: 50px;
+    padding-bottom: 0px;
+    padding-left: 50px;
+    position: relative;
+  }
+  
+  .landing_page .bg-img {
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    top: 0px;
+    height: 100%;
+    opacity: 0.5;
+    object-fit: cover;
+  }
+  
+  @media (max-width: 768px) {
+    .landing_page .responsive-cell-block.wk-desk-6.wk-ipadp-6.wk-tab-12.wk-mobile-12.left-one {
+      justify-content: center;
+      margin-top: 0px;
+      margin-right: 0px;
+      margin-bottom: 30px;
+      margin-left: 0px;
+    }
+  
+    .landing_page .responsive-cell-block.wk-tab-12.wk-mobile-12.wk-desk-6.wk-ipadp-6.emial {
+      padding-top: 0px;
+      padding-right: 0px;
+      padding-bottom: 0px;
+      padding-left: 0px;
+    }
+  
+    .landing_page .responsive-cell-block.wk-desk-6.wk-ipadp-6.wk-tab-12.wk-mobile-12.left-one {
+      margin: 0 0 40px 0;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .landing_page .text-blk.section-head {
+      font-size: 26px;
+      line-height: 40px;
+    }
+  
+    .landing_page .responsive-container-block.big-container {
+      padding-top: 0px;
+      padding-right: 20px;
+      padding-bottom: 0px;
+      padding-left: 20px;
+    }
+  
+    .landing_page .text-blk.section-subhead {
+      margin-top: 0px;
+      margin-right: 0px;
+      margin-bottom: 30px;
+      margin-left: 0px;
+      font-size: 16px;
+    }
+  
+    .landing_page .form-box {
+      padding-top: 30px;
+      padding-right: 15px;
+      padding-bottom: 30px;
+      padding-left: 15px;
+    }
+  
+    .landing_page .responsive-cell-block.wk-desk-6.wk-ipadp-6.wk-tab-12.wk-mobile-12.left-one {
+      margin: 0 0 30px 0;
+    }
+  
+    .landing_page .input {
+      height: 45px;
+    }
+  
+    .landing_page .text-blk.contactus-head {
+      font-size: 24px;
+      line-height: 34px;
+    }
+  }
